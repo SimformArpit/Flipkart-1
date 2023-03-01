@@ -1,0 +1,551 @@
+
+body{
+    margin : 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(243, 240, 240);
+    overflow-x: hidden;
+
+   
+    
+}
+
+header{
+    display: flex;
+    background-color: #2874f0;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 56px;
+}
+.nav-container .logo{
+    cursor: pointer;
+    margin-left: 100px;
+}
+.nav-container .logo img{
+    width: auto;
+    height: 20px;
+    margin-left: 180px;
+}
+.nav-container .logo .explore{
+    color: #f0f0f0;
+    font-size: 11px;
+    margin-left: 180px;
+        display: flex;
+       
+}
+.nav-container .logo .explore .plus{
+    color:#ffe500;
+}
+.nav-container .logo .explore .plusimg img{
+ margin: 0;    
+ padding: 2px;
+ height: 10px;
+ width: 10px;
+}
+header .search {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+header .search .search-container{
+    width: 540px;
+    height: 36px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
+    display: flex;
+}
+header .search .search-container input {
+    width: calc(100% - 32px);
+    padding: 16px;
+    outline: none;
+    border: none;
+}
+header .search .search-container button {
+    width: 36px;
+    height: 100%;
+    padding: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    
+}
+
+header .login {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    margin-left: 100px  ;
+    
+}
+header .login .loginBtn {
+    width: 122px;
+    padding: 5px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2874f0;
+    cursor: pointer;
+    border: none;
+    
+}
+.HoverLogin{
+    position: absolute;
+    top: 61px;
+    height: 385px;
+    width: 250px;
+    background-color: #ffffff;
+    margin-left: -110px;
+    margin-top: -5px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.2),
+    5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 8px 10px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+   
+}
+.triangle-up{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid #ffffff;
+    top: -20px;
+   
+}
+.Newuser{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.Newuser a{
+    color: #2874f0;
+    margin-top: 12px;
+}    
+.loginMenu{
+    width: 250px;
+    
+}
+.menuList{
+    padding-left: 10px;
+    display: flex;
+    padding-top: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.menuList p{
+    margin-top: -3px;
+    padding-left: 10px;
+}
+.menuList i{
+    color: #2874f0;
+}
+.loginBtn:hover .HoverLogin{
+    display: flex;
+}
+.triangle-up:hover .HoverLogin{
+    display: flex;
+}
+
+.Navlink1{
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: none;
+    padding-top: 20px;
+    margin-left: 40px;
+    
+}
+.Navlink1:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+.Navlink1 img{
+    margin-top: -3px;
+    margin-right: 5px;
+}
+
+
+
+header .become-seller {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+/* More */
+header .more{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+header .moremenu{
+
+    display: none;
+    background-color: black;
+    height: 203px;
+    width: 240px;
+    margin-top: 6px;
+    margin-top: 250px;
+    
+}
+header .more svg {
+    margin-left: 8px;
+    rotate: -90deg;
+}
+.HoverMore{
+    position: absolute;
+    top: 60px;
+    height: 220px;
+    width: 250px;
+    background-color: #ffffff;
+    margin-left: -110px;
+    margin-top: -5px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.2),
+    5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 8px 10px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    display: none;
+}
+.triangle-up-more{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid #ffffff;
+    top: -20px;
+}
+.moreMenu{
+    width: 250px;
+}
+.moreList{
+    padding-left: 10px;
+    display: flex;
+    
+}
+.moreList p{
+    margin-top: -3px;
+    padding-left: 10px;
+}
+.moreList i{
+    color: #2874f0;
+}
+.angledownIcon:hover .down{
+    transition: 0.1s;
+    transform: rotate(-180deg);
+    color: #ffffff;
+}
+.angledownIcon:hover .HoverMore{
+    display: flex;
+}
+.more i{
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+
+/* Cart */
+header .cart {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+}
+header .cart svg {
+    margin-right: 8px;
+}
+.section-1 {
+    width: 100%;
+    height: 112px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+}
+.section-1-container{
+    width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.section-1-item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.section-1-item img {
+    width: 64px;
+    height: 64px;
+}
+
+/* Deal of the day */
+.Deal{
+    /* display: flex; */
+   
+    width: 75%;
+    height: 350px;
+    background-color:white;
+}
+.Dealinside{
+    width: 100%;
+    height: 20%;
+   align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.Dealinside span#Dod{
+font-weight: 500;
+font-size: x-large;
+padding: 15px;
+
+}
+.Dealinside span#time{
+    padding: 10px;
+    font-weight: lighter;
+}
+.Dealinside button{
+    background-color: #2874f0;
+    height: 40px;
+    border: none;
+    color: white;
+    width: 100px;
+    border-radius: 2px;
+    margin-right: 20px;
+
+    
+}
+.Dealinside button :hover{
+    cursor: pointer;
+}
+
+.items{
+    display: flex;
+    overflow: auto;
+}
+.items-list img{
+    margin: 0;
+ height: 150px;
+ width: 120px;
+ padding: 0px 30px;
+}
+
+.items-list1 img{
+    height:150px;
+    padding: 0px 30px;
+}
+.items-list1 .itemname ,.itemoffer,.itemdeals{
+    font-size: small;
+    display: flex;
+    justify-content: center;
+}
+.itemoffer1{
+color: green;
+}
+.itemname{
+    font-size: small;
+    display: flex;
+    justify-content: center;
+}
+.items li{
+    list-style-type: none;
+}
+.items::-webkit-scrollbar { 
+        display: none; 
+    }
+
+ .specialoffer{
+    display: flex;
+    
+    height: 400px;
+    width: 200px;
+    /* float: right; */
+    margin-left: 20px;    
+
+ }
+ .specialoffer img{
+    height: 350px;
+    width: 100%;
+ }
+.Day{
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 1730px;
+    height: 370px;
+    background-color:rgb(243, 240, 240) ;
+    display: flex;
+    margin-right: 20px;
+}
+
+
+.section-1-item:hover i{
+    transform: rotate(180deg);
+}
+.section-1-item :hover{
+    color: #2874f0;
+    cursor: pointer;
+}
+
+.items-list .itemoffer,.items-list1 .itemoffer{
+color: green;
+
+}
+.items-list .itemdeals ,.items-list1 .itemdeals{
+    font-weight: 100;
+}
+
+
+
+.items-list img:hover{
+transform: scale(1.1,1.1);
+padding-top: 8px;
+
+}
+.items-list1 img:hover{
+    transform: scale(1.1,1.1);
+    padding-top: 8px;
+}
+.items{
+    cursor: pointer;
+}
+
+
+.hr{
+    margin:-2px;
+}
+
+.slider{
+    position: absolute;
+    align-items: center;
+    float: right;
+    left: 1378px;
+    top: 350px;
+    height: 100px;
+}
+.slider button {
+    height: 60px;
+}
+
+/* books and instrument */
+.books{
+    /* display: flex; */
+   
+    width: 88%;
+    height: 350px;
+    background-color:white;
+}
+.booksinside{
+    width: 100%;
+    height: 20%;
+   align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.booksinside span#Dod{
+font-weight: 500;
+font-size: x-large;
+padding: 15px;
+}
+
+.booksinside button{
+    background-color: #2874f0;
+    height: 40px;
+    border: none;
+    color: white;
+    width: 100px;
+    border-radius: 2px;
+    /* margin-left: 1040px; */
+    margin-right: 20px;
+    
+}
+.booksinside button :hover{
+    cursor: pointer;
+}
+
+.items-2{
+    display: flex;
+    overflow: auto;
+}
+.items-list4 img{
+    margin: 0;
+ height: 150px;
+ width: 120px;
+ padding: 0px 30px;
+}
+.items-list4 .itemname ,.itemoffer1,.itemdeals1{
+    font-size: small;
+   
+    display: flex;
+    justify-content: center;
+}
+.items-list3 img{
+    height:150px;
+    padding: 0px 30px;
+}
+.itemoffer{
+    color: green;
+}
+.items-2 li{
+    list-style-type: none;
+}
+.items::-webkit-scrollbar { 
+        display: none; 
+    }
+
+    .hii{
+        
+        margin-left: 100px;
+        width: 1730px;
+        height: 400px;
+        background-color:rgb(243, 240, 240) ;
+        display: flex;
+        margin-right: 20px;
+    }
+    .items-list3 img:hover{
+        transform: scale(1.1,1.1);
+        padding-top: 8px;
+        
+        }
+        .items-list4 img:hover{
+            transform: scale(1.1,1.1);
+            padding-top: 8px;
+        }
+      
